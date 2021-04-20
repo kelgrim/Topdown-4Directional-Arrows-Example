@@ -1,9 +1,9 @@
-# Example of 4 directional movement with arrows. 
+# Example of 4 directional movement with arrows - In Godot with GDScript 
 
 Arrows explode similarly to the original Zelda game.
 If you hold down fire for a second, it will shoot a power shot. 
 
-Controles:
+Controls:
 WASD for movement. 
 Space for shooting
 

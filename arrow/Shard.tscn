@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://textures/Arrow.png" type="Texture" id=1]
+[ext_resource path="res://arrow/Shard.gd" type="Script" id=2]
+
+[node name="Shard" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = -1.5708
+texture = ExtResource( 1 )
+vframes = 13
+hframes = 13
+frame = 29
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
